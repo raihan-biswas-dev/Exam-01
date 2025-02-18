@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -32,7 +33,9 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -40,10 +43,11 @@
                                 <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#">About</a>
+                                <a class="nav-link text-white" href="#about_section">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Contact</a>
+                                <footer id="footer_section" class="footer">
+                                    <a class="nav-link text-white" href="#contact_part">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -58,16 +62,19 @@
             <div class="container">
                 <div class="hero_main">
                     <div class="row d-lg-flex justify-content-center align-items-center">
-                        <div class="col">
+                        <div class="col-md-6 col-sm-12 order-2 order-md-1">
                             <h1 class="">CREATIVE UI<br> <span class="color_text">DESIGNER</span></h1>
-                            <a class="hero_btn " href="#">Hire Me</a>
-                            <a class="hero_btn btn2" href="#"> Download CV <i class="fa-regular fa-circle-down"></i></a>
+                            <div class="hero_button">
+                                <a class="hero_btn " href="#">Hire Me</a>
+                                <a class="hero_btn btn2" href="#"> Download CV <span><i
+                                            class="fa-regular fa-circle-down"></i></span></a>
+                            </div>
                         </div>
-                        <div class="col ms-auto">
-                            <img src="images/Group 2345.png" class="ms-auto" alt="">
+                        <div class="col-md-6 col-sm-12 ms-auto order-1 order-md-2 ">
+                            <img src="images/Group 2345.png" class="ms-auto image_resize" alt="">
                         </div>
                     </div>
-                    <div class="scrool_icon text-center text-white">
+                    <div class="scrool_icon text-center text-white mt-sm-2">
                         <a href="#"><i class="fa-solid fa-arrow-down-long"></i></a>
                     </div>
                 </div>
@@ -75,11 +82,11 @@
             </div>
         </section>
 
-        <section>
+        <section id="about_section">
             <div class="container">
                 <div class="about_part">
                     <div class="row  d-flex justify-content-start align-items-center gap-2">
-                        <div class="col pe-5">
+                        <div class="col-md-6 col-sm-12 pe-5">
                             <h2 class="text-white fw-bold">About <span class="color_text">me</span></h2>
                             <p class="text-white pe-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                                 vulputate libero et velit
@@ -89,7 +96,7 @@
                             </p>
                             <a class="hero_btn about_btn" href="#">Read More</a>
                         </div>
-                        <div class="col">
+                        <div class="col-md-6 col-sm-12">
                             <div class="about_right_bg">
                                 <img src="images//about.png" class="" alt="">
                             </div>
@@ -156,17 +163,64 @@
         </section>
         <section id="contact_part">
             <div class="container">
-                <div class="contact_main d-flex">
-                    <div class="row">
+                <div class="contact_main">
+                    <div class="row d-flex justify-content-center align-items-center">
                         <div class="col">
                             <h2 class="text-white fw-bold">Got a project in <span class="color_text">mind?</span></h2>
                             <img src="images/contact.png" alt="">
                         </div>
+                        <div class="col">
+                            <div class=" form-container">
+                                <form class="form_main">
+                                    <div class="row mb-3">
+                                        <div class="col-6">
+                                            <label for="name" class="form-label fw-bold">Your name</label>
+                                            <input type="text" class="form-control" id="name" placeholder="Name"
+                                                required>
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="email" class="form-label fw-bold">Your email</label>
+                                            <input type="email" class="form-control" id="email" placeholder="Email"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label fw-bold">Your Message</label>
+                                        <textarea class="form-control" id="message" rows="5" placeholder="Message"
+                                            required></textarea>
+                                    </div>
+                                    <div class="d-grid gap-2">
+                                        <button type="submit"
+                                            class="fw-bold btn btn-primary col-5 shadow p-3 mt-3 mb-5 rounded-pill">Send
+                                            Message
+                                            <span class="ms-2"><i class="fa-regular fa-paper-plane"></i></span></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-
         </section>
+        <footer id="footer_section" class="footer">
+            <div class="container">
+                <div class="footer_menu text-white text-center">
+                    <a href="#home"><span><i class="fa-solid fa-house-chimney"></i></span>Home</a>
+                    <a href="#about"><span><i class="fa-solid fa-user"></i></span>About</a>
+                    <a href="#contact"><span><i class="fa-solid fa-phone"></i></span>Contact</a>
+                </div>
+
+                <div class="container mt-5">
+                    <div class="social-icons d-flex justify-content-center align-content-center">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <p class="mt-3 text-end text-white">Terms of Service - Privacy Policy</p>
+                </div>
+
+        </footer>
     </main>
 
 

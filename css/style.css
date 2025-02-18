@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 :root {
     --color-primary: #ffffff;
     --color-secondary: #00adb5;
@@ -32,6 +35,13 @@ header {
     border-bottom: 1px solid rgba(238, 238, 238, 0.1);
 }
 
+/* Toggle Nav */
+
+.navbar-light .navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+}
+
 .nav-item {
     margin-left: 48px;
     font-size: 18px;
@@ -48,6 +58,7 @@ header {
     font-size: 96px;
     font-weight: 700;
 }
+
 #hero_sec .hero_btn,
 .about_btn {
     padding: 10px 32px;
@@ -57,6 +68,9 @@ header {
     font-size: 18px;
     font-weight: 700;
     margin: 0 10px;
+}
+.hero_btn span {
+    margin-left: 10px;
 }
 
 #hero_sec .btn2 {
@@ -162,4 +176,81 @@ header {
 
 #contact_part h2 {
     font-size: 64px;
+}
+
+/* contact form  */
+
+.form_main label,
+sent_btn {
+    font-size: 18px;
+}
+.form-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.form-label {
+    color: #a0a0a0;
+}
+.form-control {
+    background-color: rgba(57, 62, 70, 0.5);
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    padding: 12px;
+}
+.form-control:focus {
+    background-color: #4a4a4a;
+    box-shadow: none;
+}
+.form-control::placeholder {
+    color: #6b6b6b;
+}
+.btn-primary {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+.btn-primary:hover {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+}
+
+/* footer part */
+
+.footer_menu a {
+    margin: 0px 10px;
+    color: #fff;
+    font-size: 18px;
+}
+.footer_menu a span {
+    margin-right: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* .footer_icon a {
+    background: #495057;
+    padding: 14px 19px;
+} */
+
+.social-icons a {
+    width: 40px; /* Size of the circle */
+    height: 40px; /* Size of the circle */
+    display: flex;
+    margin: 0 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: #393e46; /* Example color, change as needed */
+    border-radius: 50%; /* Makes the div circular */
+    color: rgb(238, 238, 238, 0.75); /* Icon color */
+    transition: background-color 0.3s ease;
+}
+
+.footer_menu.text-white.text-center {
+    margin-bottom: -20px;
 }

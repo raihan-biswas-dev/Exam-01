@@ -1,0 +1,22 @@
+@media screen and (max-width: 575px) {
+    #hero_sec h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .hero_button {
+        text-align: center;
+    }
+
+    #hero_sec .btn2 {
+        margin-top: 19px;
+    }
+
+    .image_resize {
+        width: 100%;
+    }
+
+    /* .scrool_icon a {
+        margin-top: 20px;
+    } */
+}
